@@ -1,0 +1,51 @@
+[workspace]
+
+[package]
+name = "rust-third-party"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[[bin]]
+name = "fake"
+path = "/dev/null"
+
+[dependencies]
+anyhow_1_0_86 = { package = "anyhow", version = "1.0.86", features = ["backtrace"] }
+axum_0_6_20 = { package = "axum", version = "0.6.20" }
+axum-server_0_4_7 = { package = "axum-server", version = "0.4.7", default_features = false }
+chrono_0_4_38 = { package = "chrono", version = "0.4.38" }
+clap_4_4_11 = { package = "clap", version = "4.4.11", features = ["derive"] }
+clap_3_2_25 = { package = "clap", version = "3.2.25", features = ["derive"] }
+const-str_0_5_4 = { package = "const-str", version = "0.5.4" }
+dirs_5_0_1 = { package = "dirs", version = "5.0.1" }
+env_logger_0_11_3 = { package = "env_logger", version = "0.11.3" }
+gcloud-sdk_0_24_7 = { package = "gcloud-sdk", version = "0.24.7", default_features = false, features = ["google-rest-compute-v1", "rest", "tls-roots"] }
+git-version_0_3_5 = { package = "git-version", version = "0.3.5", default_features = false }
+itertools_0_12_1 = { package = "itertools", version = "0.12.1" }
+lazy_static_1_5_0 = { package = "lazy_static", version = "1.5.0" }
+libc = { package = "libc", version = "0.2" }
+log_0_4_21 = { package = "log", version = "0.4.21" }
+minijinja_1_0_12 = { package = "minijinja", version = "1.0.12" }
+once_cell_1_19_0 = { package = "once_cell", version = "1.19.0" }
+prometheus_0_13_3 = { package = "prometheus", version = "0.13.3" }
+prometheus-parse_0_3_0 = { package = "prometheus-parse", git = "https://github.com/suiwombat/prometheus-parse-rs.git", rev = "daa964cff5b83fbcf0ff08c0ab50dc7130239df3" }
+regex_1_10_2 = { package = "regex", version = "1.10.2" }
+reqwest_0_11_18 = { package = "reqwest", version = "0.11.18", default_features = false }
+semver_1_0_22 = { package = "semver", version = "1.0.22" }
+serde_1_0_197 = { package = "serde", version = "1.0.197", features = ["derive", "rc"] }
+serde_derive_1_0_197 = { package = "serde_derive", version = "1.0.197" }
+serde_json_1_0_115 = { package = "serde_json", version = "1.0.115" }
+serde_starlark_0_1_16 = { package = "serde_starlark", version = "0.1.16" }
+serde_yaml_0_8_26 = { package = "serde_yaml", version = "0.8.26" }
+spinoff_0_8_0 = { package = "spinoff", version = "0.8.0" }
+tokio_1_39_1 = { package = "tokio", version = "1.39.1", features = ["full"] }
+toml_0_8_11 = { package = "toml", version = "0.8.11" }
+toml_edit_0_22_7 = { package = "toml_edit", version = "0.22.7" }
+tower_0_4_13 = { package = "tower", version = "0.4.13", default_features = false }
+tower-http_0_4_0 = { package = "tower-http", version = "0.4.0", default_features = false, features = ["trace"] }
+tracing_0_1_40 = { package = "tracing", version = "0.1.40" }
+tracing-subscriber_0_3_18 = { package = "tracing-subscriber", version = "0.3.18", features = ["env-filter"] }
+uuid_1_8_0 = { package = "uuid", version = "1.8.0", features = ["fast-rng", "macro-diagnostics", "v4"] }
+
+["patch.crates-io"]

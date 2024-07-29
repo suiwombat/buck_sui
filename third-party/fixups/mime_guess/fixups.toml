@@ -1,0 +1,7 @@
+[env]
+MIME_TYPES_GENERATED_PATH="../../../../../__mime_guess-2.0.5-build-script-run__/OUT_DIR/mime_types_generated.rs"
+[[buildscript]]
+[buildscript.rustc_flags]
+
+[[buildscript]]
+[buildscript.gen_srcs]
