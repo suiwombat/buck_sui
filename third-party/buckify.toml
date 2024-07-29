@@ -2,9 +2,7 @@
 # dependencies in cargo.toml.  We support package and version keys. the corresponding cargo_metadata.json must be aware of these crates
 # if buckify does not create the BUCK file for you, try cargo build, refresh the cargo_metadata.json and run buckify again.
 [crates]
-buckify = {}
-hagent = {}
-workload = {}
+sui-proxy = {}
 
 # static is like crates, but will always be included as static deps in reindeer's cargo.toml.  We support package and version keys.
 [static]
