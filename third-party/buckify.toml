@@ -3,6 +3,7 @@
 # if buckify does not create the BUCK file for you, try cargo build, refresh the cargo_metadata.json and run buckify again.
 [crates]
 sui-proxy = {}
+sui-node = {}
 
 # static is like crates, but will always be included as static deps in reindeer's cargo.toml.  We support package and version keys.
 [static]
